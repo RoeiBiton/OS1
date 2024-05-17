@@ -34,13 +34,10 @@ int main(int argc, char *argv[]) {
         arr[i] = rand() % 100 - 25;
     }
 
-    clock_t start = clock();
+    
     int max_sum = maxSubArraySumN2(arr, array_size);
-    clock_t end = clock();
-    double time_spent = (double)(end - start) / CLOCKS_PER_SEC;
 
     printf("Max subarray sum (O(n^2)): %d\n", max_sum);
-    printf("Time taken: %f seconds\n", time_spent);
 
     return 0;
 }
